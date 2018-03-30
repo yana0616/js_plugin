@@ -1,0 +1,22 @@
+doctype
+html(lang='ja')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width')
+        title Kalendae | カレンダーUI | 便利そうなプラグインまとめ
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        .l-wrapper
+            h1.c-heading--h1 Karendae
+            p jQuery非依存のカレンダーUI
+              br
+              a(href='http://yuw27b.hatenablog.com/entry/2016/01/08/232342', target='_blank') 見つけたとこ
+              br
+              a(href='https://github.com/Twipped/Kalendae', target='_blank') GitHub
+
+
+            h2.c-heading--h2 期間を取得
+            input(type='text', data-calender='calender', readonly='readonly')
+            .test(data-cal-result='result')
+
+        script(type='text/javascript', src='/js/app.js')

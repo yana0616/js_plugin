@@ -1,0 +1,101 @@
+@import 'normalize.css/normalize.css';
+@import 'kalendae/build/kalendae.css';
+@import 'flatpickr/dist/flatpickr.min.css';
+@import 'flatpickr/dist/flatpickr.min.css';
+@import 'slick-carousel/slick/slick.css';
+@import 'swiper.min.css';
+
+.sp-selected-thumbnail
+  opacity 0.6
+
+html
+  -webkit-text-size-adjust 100%
+  font-size 62.5%
+
+body
+  font-size 1.4rem
+  line-height 1.6
+
+// Layout
+// ----------------------- //
+.l-wrapper
+  padding 10px
+  max-width 900px
+  margin 0 auto
+
+// Object(Components)
+// ----------------------- //
+.c-heading--h1
+  font-size 2.2rem
+
+.c-heading--h2
+  font-size 1.8rem
+  line-height 1.6
+  border-bottom 2px dashed #aaa
+  margin 30px 0 0
+
+.c-heading--h3
+  font-size 1.8rem
+  line-height 1.6
+  border-left 5px solid #aaa
+  padding-left 5px
+
+
+// form
+// ------------------------- //
+.c-formBlock
+  max-width 500px
+  margin 20px auto 0
+
+.c-formBlock__ttl
+  font-weight bold
+
+.c-formBlock__contents
+  width 100%
+  margin 5px 0
+
+.c-form--text
+  display block
+  width 100%
+  padding 10px
+  border-radius 5px
+  border 1px solid #999999
+  box-shadow none
+  &:focus
+    border 1px solid green
+
+
+//calendar
+.k-floating
+  background #ffffff !important
+  box-shadow 0 0 10px 0 #999 !important
+
+.k-calendar
+  display block !important
+  float none !important
+  
+.kalendae
+  .k-caption
+    display flex
+    flex-direction row-reverse
+    justify-content center
+
+  .k-header
+    & > *[data-day='6']
+      color blue !important
+    & > *[data-day='0']
+      color red !important
+
+
+  .k-separator
+    display: none
+
+  .k-out-of-month
+    visibility hidden
+
+
+  .k-out-of-month,.k-in-month
+    &:nth-child(7n)
+      color blue !important
+    &:nth-child(7n+1)
+      color red !important

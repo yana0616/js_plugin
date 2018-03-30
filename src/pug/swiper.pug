@@ -1,0 +1,42 @@
+doctype
+html
+    head
+        meta(name='viewport', content='width=device-width')
+        title swiper | スライダー | 便利そうなjQueryプラグイン
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        .l-wrapper
+            h1.c-heading--h1 swiper
+            p レスポンシブ対応。IE8以上で動作。
+              br
+              |シャッフル表示も可能だし、オプションの設定次第でスライド方向変更できるし、サムネ使用も楽にできるので、割と使いやすそう。
+              br
+              |画面幅でサムネ表示の位置を変えたりできる。
+              br
+              a(href='http://bqworks.com/slider-pro/', target='_blank') 本家サイト（配布元）
+              br
+              a(href='http://gimmicklog.main.jp/jquery/340/', target='_blank') 個人的に参考にさせてもらったサイト
+              br
+              |ちょっとチカチカするかな。。。
+
+            h2.c-heading--h2 標準
+                .swiper-container
+                    ul.swiper-wrapper(data-target-slider='slick')
+                        li.swiper-slide: img(src='http://placehold.it/800x200?text=1')
+                        li.swiper-slide: img(src='http://placehold.it/800x200?text=2')
+                        li.swiper-slide: img(src='http://placehold.it/800x200?text=3')
+                        li.swiper-slide: img(src='http://placehold.it/800x200?text=4')
+                        li.swiper-slide: img(src='http://placehold.it/800x200?text=4')
+                    .swiper-pagination
+
+                ul.responsive(data-target-slick='slick')
+                    li: img(src='http://placehold.it/800x200?text=1')
+                    li: img(src='http://placehold.it/800x200?text=2')
+                    li: img(src='http://placehold.it/800x200?text=3')
+                    li: img(src='http://placehold.it/800x200?text=4')
+                    li: img(src='http://placehold.it/800x200?text=4')
+
+        script(type='text/javascript', src='/js/app.js')
+
+
+
