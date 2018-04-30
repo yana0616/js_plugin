@@ -15,26 +15,51 @@ html
               br
               a(href='http://bqworks.com/slider-pro/', target='_blank') 本家サイト（配布元）
               br
-              a(href='http://gimmicklog.main.jp/jquery/340/', target='_blank') 個人的に参考にさせてもらったサイト
+              a(href='http://idangero.us/swiper/api/', target='_blank') ドキュメント（ここ見たほうが確実）
               br
-              |ちょっとチカチカするかな。。。
+              |バージョンの関係かもだけど、ググって出てきたサンプルのコードだと動かなかった。。。。
 
             h2.c-heading--h2 標準
-                .swiper-container
-                    ul.swiper-wrapper(data-target-slider='slick')
-                        li.swiper-slide: img(src='http://placehold.it/800x200?text=1')
-                        li.swiper-slide: img(src='http://placehold.it/800x200?text=2')
-                        li.swiper-slide: img(src='http://placehold.it/800x200?text=3')
-                        li.swiper-slide: img(src='http://placehold.it/800x200?text=4')
-                        li.swiper-slide: img(src='http://placehold.it/800x200?text=4')
-                    .swiper-pagination
 
-                ul.responsive(data-target-slick='slick')
-                    li: img(src='http://placehold.it/800x200?text=1')
-                    li: img(src='http://placehold.it/800x200?text=2')
-                    li: img(src='http://placehold.it/800x200?text=3')
-                    li: img(src='http://placehold.it/800x200?text=4')
-                    li: img(src='http://placehold.it/800x200?text=4')
+            .containerWrap.u-mt20
+                .swiper-container(data-target-slider='default')
+                    ul.swiper-wrapper
+                        li.swiper-slide: img(src='http://placehold.it/800x200/0000cd?text=1')
+                        li.swiper-slide: img(src='http://placehold.it/800x200/008000?text=2')
+                        li.swiper-slide: img(src='http://placehold.it/800x200/ffd700?text=3')
+                        li.swiper-slide: img(src='http://placehold.it/800x200/9400d3?text=4')
+                        li.swiper-slide: img(src='http://placehold.it/800x200/dc143c?text=5')
+                    .swiper-pagination
+                    .swiper-button-prev
+                    .swiper-button-next
+
+
+            h2.c-heading--h2 ちょっとカスタム
+            .containerWrap.u-mt20
+                p 縦スライド。高さ固定しないとおかしくなる。。。。
+                .swiper-container(data-target-slider='custom01')
+                    ul.swiper-wrapper
+                        li.swiper-slide: img(src='http://placehold.it/800x200/0000cd?text=1')
+                        li.swiper-slide: img(src='http://placehold.it/800x200/008000?text=2')
+                        li.swiper-slide: img(src='http://placehold.it/800x200/ffd700?text=3')
+                        li.swiper-slide: img(src='http://placehold.it/800x200/9400d3?text=4')
+                        li.swiper-slide: img(src='http://placehold.it/800x200/dc143c?text=5')
+                    .swiper-pagination
+                p.u-mt20 レスポンシブ（ブレイクポイントによる切り替え）
+                .swiper-container(data-target-slider='custom02')
+                    ul.swiper-wrapper
+                        li.swiper-slide: img(src='http://placehold.it/400x200/0000cd?text=1')
+                        li.swiper-slide: img(src='http://placehold.it/400x200/008000?text=2')
+                        li.swiper-slide: img(src='http://placehold.it/400x200/ffd700?text=3')
+                        li.swiper-slide: img(src='http://placehold.it/400x200/9400d3?text=4')
+                        li.swiper-slide: img(src='http://placehold.it/400x200/dc143c?text=5')
+                    .swiper-pagination
+                    .swiper-button-prev
+                    .swiper-button-next
+
+
+
+
 
         script(type='text/javascript', src='/js/app.js')
 
