@@ -1,0 +1,37 @@
+doctype
+html(lang='ja')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width')
+        title AOS | アニメーション | 便利そうなプラグインまとめ
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        .l-wrapper
+            .c-link--back: a(href='../') 戻る
+            h1.c-heading--h1 AOS
+            p
+                a(href='https://github.com/michalsnik/aos', target='_blank') 本家サイト（配布元）
+
+            h2.c-heading--h2 fade系
+            .animateItem(data-aos='fade-up', data-aos-duration='1000') fade-up
+                br
+                |data-aos-duration='1000'
+                br
+                |(動作スピード)
+            .animateItem(data-aos='fade-down', data-aos-delay='1000') fade-down
+                br
+                |data-aos-delay='1000'
+                br
+                |（動作がスタートするスピード）
+            .animateItem(data-aos='fade-right') fade-right
+            .animateItem(data-aos='fade-left') fade-left
+            .animateItem(data-aos='zoom-in') zoom-in
+            .animateItem(data-aos='zoom-out') zoom-out
+            .animateItem(data-aos='flip-left', data-aos-duration='1000') flip-left
+
+            .c-link--back: a(href='../') 戻る
+
+        script(src='/js/app.js')
+
+
+
