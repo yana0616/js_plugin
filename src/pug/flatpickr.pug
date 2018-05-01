@@ -7,6 +7,8 @@ html(lang='ja')
         link(rel='stylesheet', href='/css/style.css')
     body
         .l-wrapper
+            .c-link--back: a(href='../') 戻る
+
             h1.c-heading--h1 flatpickr
             p
               a(href='https://flatpickr.js.org/', target='_blank') 本家サイト（配布元）
@@ -15,6 +17,8 @@ html(lang='ja')
 
             h2.c-heading--h2 標準
             input.flatpicker(type='text', data-calender='flatpicker')
+
+            .c-link--back.u-mt20: a(href='../') 戻る
 
         script(src='/js/app.js')
 
