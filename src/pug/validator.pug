@@ -1,0 +1,57 @@
+doctype
+html
+    head
+        meta(name='viewport', content='width=device-width')
+        title swiper | スライダー | 便利そうなjQueryプラグイン
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        .l-wrapper
+            h1.c-heading--h1 Pristine
+            //- p
+                a(href='https://www.wan55.co.jp/column/detail/id=588', target='_blank') ざっくり説明書いてくれてたところ（ワンゴジュウゴ）
+                br
+                a(href='http://idangero.us/swiper/api/', target='_blank') ドキュメント（ここ見たほうが確実）
+                br
+                a(href='http://idangero.us/swiper/demos/', target='_blank') デモ
+
+            h2.c-heading--h2 標準
+
+            .containerWrap.u-mt20
+                form(id='inquireForm', method='post', novalidate)
+                    input(type='hidden')
+                    dl.formGroup
+                        dt: label 名前
+                        dd
+                            input.formControl(type='text', name='name', data-target-input='name', required)
+                            .errorTxt(data-msg='error')
+
+                    dl.formGroup
+                        dt: label 法人名
+                        dd
+                            input.formControl(type='text', name='company', data-target-input='company', required)
+                            .errorTxt(data-msg='error')
+
+                    dl.formGroup
+                        dt: label 電話番号
+                        dd
+                            input.formControl(type='tel', name='tel', data-target-input='tel', required)
+                            .errorTxt(data-msg='error')
+
+                    dl.formGroup
+                        dt: label メールアドレス
+                        dd
+                            input.formControl(id='email', type='email', name='email', data-target-input='email', required)
+                            .errorTxt(data-msg='error')
+
+                    dl.formGroup
+                        dt: label お問い合わせ内容
+                        dd
+                            textarea.formControl(name='contents', data-target-input='contents', required)
+                            .errorTxt(data-msg='error')
+
+                    input(type='submit', value='SUBMIT')
+
+        script(type='text/javascript', src='/js/app.js')
+
+
+
